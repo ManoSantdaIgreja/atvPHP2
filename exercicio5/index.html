@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo de Jokenpô</title>
+    <style>
+        .opcao {
+            display: inline-block;
+            margin: 10px;
+        }
+        .opcao img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo de Jokenpô</h1>
+    <form action="jokenpo.php" method="post">
+        <div class="opcao">
+            <input type="radio" id="pedra" name="escolha" value="pedra" required>
+            <label for="pedra"><img src="pedra-removebg-preview.png" alt="Pedra"></label>
+        </div>
+        <div class="opcao">
+            <input type="radio" id="papel" name="escolha" value="papel" required>
+            <label for="papel"><img src="papel.png" alt="Papel"></label>
+        </div>
+        <div class="opcao">
+            <input type="radio" id="tesoura" name="escolha" value="tesoura" required>
+            <label for="tesoura"><img src="tesoura.png" alt="Tesoura"></label>
+        </div>
+        <input type="submit" value="Jogar">
+    </form>
+</body>
+</html>
